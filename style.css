@@ -149,7 +149,7 @@ button.reset-btn{
         align-items: center;
     }
     header .heading{
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .score-red, .score-blue{
         display: none;
