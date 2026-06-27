@@ -143,7 +143,7 @@ button.reset-btn{
     z-index: -1000;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1080px) {
     header{
         justify-content: space-between;
         align-items: center;
@@ -169,7 +169,7 @@ button.reset-btn{
         color: #ffffff;
     }
     .game-container .base-container{
-        width: 90%;
+        width: 75%;
         height: 50%;
     }
     .base-container .box{
