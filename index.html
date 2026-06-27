@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+    <header>
+        <div class="score-red" id="score-red">Player X</div>
+        <div class="score-x" id="score-x">0</div>
+        <div class="heading">Tic Tac Toe</div>
+        <div class="score-o" id="score-o">0</div>
+        <div class="score-blue" id="score-blue">Player O</div>
+    </header>
+    <main>
+        <div class="game-container">
+            <div class="base-container">
+                <div class="box" id="box1" onclick="plot('box1')"></div>
+                <div class="box" id="box2" onclick="plot('box2')"></div>
+                <div class="box" id="box3" onclick="plot('box3')"></div>
+                <div class="box" id="box4" onclick="plot('box4')"></div>
+                <div class="box" id="box5" onclick="plot('box5')"></div>
+                <div class="box" id="box6" onclick="plot('box6')"></div>
+                <div class="box" id="box7" onclick="plot('box7')"></div>
+                <div class="box" id="box8" onclick="plot('box8')"></div>
+                <div class="box" id="box9" onclick="plot('box9')"></div>
+            </div>
+            <button class="reset-btn" id="reset-btn" onclick="resetBtnClick()">Reset Game</button>
+        </div>
+        <div class="winner" id="winner"></div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
