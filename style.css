@@ -10,14 +10,14 @@ body{
 header{
     background-color: #f8f9fa;
     /* padding: 20px; */
-    gap: 20px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-
+    
     width: calc(100vw - 0px);
     height: 100px;
-
+    
+    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,6 +147,7 @@ button.reset-btn{
     header{
         justify-content: space-between;
         align-items: center;
+        gap: 5px;
     }
     header .heading{
         font-size: 1em;
