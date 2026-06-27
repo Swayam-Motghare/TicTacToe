@@ -175,4 +175,9 @@ button.reset-btn{
     .base-container .box{
         font-size: 3em;
     }
+    .winner{
+        font-size: 2em;
+        width: 100%;
+        height: 100%;
+    }
 }
