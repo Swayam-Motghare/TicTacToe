@@ -150,13 +150,19 @@ button.reset-btn{
         gap: 5px;
     }
     header .heading{
-        font-size: 1em;
+        font-size: 2em;
+    }
+    .score-red{
+        color:red
+    }
+    .score-blue{
+        color:blue
     }
     .score-red, .score-blue{
         display: none;
     }
     .score-x, .score-o{
-        font-size: 1em;
+        font-size: 1.25em;
         padding: 5px 20px;
     }
     div.tern-container{
