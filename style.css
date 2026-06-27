@@ -23,6 +23,7 @@ header{
     justify-content: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .score-red{
     color: rgb(255, 255, 255);
     width: 100%;
@@ -137,4 +138,28 @@ button.reset-btn{
     font-weight: bold;
     color: #ffffff;
     z-index: -1000;
+}
+
+@media (max-width: 768px) {
+    header{
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .heading{
+        font-size: 1.5em;
+    }
+    .score-red, .score-blue{
+        display: none;
+    }
+    .score-x, .score-o{
+        font-size: 2em;
+        padding: 5px 20px;
+    }
+    .game-container .base-container{
+        width: 90%;
+        height: 50%;
+    }
+    .base-container .box{
+        font-size: 3em;
+    }
 }

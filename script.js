@@ -5,6 +5,7 @@ let isWinner = false;
 let array = document.getElementsByClassName("box");
 let winner = document.getElementById("winner");
 let resetBtn = document.getElementById("reset-btn");
+
 function plot(element) {
     let plotBase = document.getElementById(element);
     let innerPlotBase = plotBase.innerHTML
@@ -20,7 +21,6 @@ function plot(element) {
 }
 
 function changeTern(player) {
-
     if (player == "X") {
         tern = "O";
         let playerO = document.getElementById("score-blue");
@@ -71,34 +71,35 @@ function resetGame(player) {
 }
 
 function winnerAlert(player) {
-    // alert(player + " Wins!");
-    document.getElementById("winner").innerHTML = "Player " + player + " Wins!";
-    document.getElementById("winner").style.color = "white";
-    document.getElementById("winner").style.display = "flex";
-    document.getElementById("winner").style.justifyContent = "center";
-    document.getElementById("winner").style.alignItems = "center";
-    document.getElementById("winner").style.zIndex = "1000";
+    let winner = document.getElementById("winner");
+    winner.innerHTML = "Player " + player + " Wins!";
+    winner.style.color = "white";
+    winner.style.display = "flex";
+    winner.style.justifyContent = "center";
+    winner.style.alignItems = "center";
+    winner.style.zIndex = "1000";
     if (player == "X") {
-        document.getElementById("winner").style.backgroundColor = "red";
+        winner.style.backgroundColor = "red";
         scoreX++;
         document.getElementById("score-x").innerHTML = scoreX;
     }
     else {
-        document.getElementById("winner").style.backgroundColor = "blue";
+        winner.style.backgroundColor = "blue";
         scoreO++;
         document.getElementById("score-o").innerHTML = scoreO;
     }
     setTimeout(() => {
-        document.getElementById("winner").style.display = "none";
-        document.getElementById("winner").style.backgroundColor = "transparent";
-        document.getElementById("winner").style.zIndex = "-1000";
+        winner.style.display = "none";
+        winner.style.backgroundColor = "transparent";
+        winner.style.zIndex = "-1000";
     }, 2000);
 }
 
 function resetBtnClick() {
     console.log("Reset Button Clicked!");
     resetGame(tern);
-    document.getElementById("winner").style.display = "none";
-    document.getElementById("winner").style.backgroundColor = "transparent";
-    document.getElementById("winner").style.zIndex = "-1000";
+    let winner = document.getElementById("winner");
+    winner.style.display = "none";
+    winner.style.backgroundColor = "transparent";
+    winner.style.zIndex = "-1000";
 }
