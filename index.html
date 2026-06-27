@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Tic Tac Toe Game">
+    <link rel="icon" href="./image/fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>TicTacToe</title>
 </head>
@@ -17,6 +19,9 @@
     </header>
     <main>
         <div class="game-container">
+            <div class="tern-container">
+                <div class="tern" id="tern">Player X's Turn</div>
+            </div>
             <div class="base-container">
                 <div class="box" id="box1" onclick="plot('box1')"></div>
                 <div class="box" id="box2" onclick="plot('box2')"></div>

@@ -29,6 +29,7 @@ function changeTern(player) {
         playerX.style.backgroundColor = "red";
         playerO.style.color = "blue";
         playerO.style.backgroundColor = "#939eff8e";
+        document.getElementById("tern").innerHTML = "Player O's Turn";
     }
     else {
         tern = "X";
@@ -38,6 +39,7 @@ function changeTern(player) {
         playerO.style.backgroundColor = "blue";
         playerX.style.color = "red";
         playerX.style.backgroundColor = "#ff93938e";
+        document.getElementById("tern").innerHTML = "Player X's Turn";
     }
 }
 
