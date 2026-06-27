@@ -155,7 +155,7 @@ button.reset-btn{
         display: none;
     }
     .score-x, .score-o{
-        font-size: 2em;
+        font-size: 1em;
         padding: 5px 20px;
     }
     div.tern-container{
